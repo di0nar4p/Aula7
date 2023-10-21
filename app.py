@@ -1,4 +1,5 @@
 import os
+
 def soma(num1:int,num2:int) -> int:
     return num1+num2
 
@@ -16,6 +17,9 @@ def divisao(num1:int,num2:int) -> int:
     except ZeroDivisionError:
         return 'Não é possivel dividir um valor por zero!'
     return num1 / num2
+
+def calcpot(base,pot):    
+     return base ** pot
 
 while True:
     print('''
@@ -81,41 +85,6 @@ while True:
             if loop == 'N':
                 break
             else:
-                os.system('cls') 
-        
-        case 2:
-           num1= int(input('Digite o primeiro valor: '))
-           num2= int(input('Digite o segundo valor: '))
-           total= sub(num1,num2)
-           print(f'\nA subtração de {num1} + {num2}= {total}')
-           loop= input('\nDeseja fazer outra operação? (S/N)  ').upper()
-           if loop == 'N':
-                break
-           else:
-                os.system('cls') 
-        
-         
-        case 3:
-           num1= int(input('Digite o primeiro valor: '))
-           num2= int(input('Digite o segundo valor: '))
-           total= mult(num1,num2)
-           print(f'\nA multiplicação de {num1} + {num2}= {total}')
-           loop= input('\nDeseja fazer outra operação? (S/N)  ').upper()
-           if loop == 'N':
-                break
-           else:
-                os.system('cls') 
-         
-        case 4:
-           num1= int(input('Digite o primeiro valor: '))
-           num2= int(input('Digite o segundo valor: '))
-           total= div(num1,num2)
-           print(f'\nA divisão de {num1} + {num2}= {total}')
-
-           loop= input('\nDeseja fazer outra operação? (S/N)  ').upper()
-           if loop == 'N':
-                break
-           else:
                 os.system('cls') 
 
         case 5:
