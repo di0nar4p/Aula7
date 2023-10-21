@@ -25,7 +25,7 @@ while True:
           2- SUBTRAÇÃO
           3- MULTIPLICAÇÃO
           4- DIVISÃO
-          5- POTENCIA
+          5- POTÊNCIA
 
           0- SAIR
           ''')
@@ -53,7 +53,7 @@ while True:
            num1= int(input('Digite o primeiro valor: '))
            num2= int(input('Digite o segundo valor: '))
            total= sub(num1,num2)
-           print(total)
+           print(f'\nA subtração de {num1} + {num2}= {total}')
            loop= input('\nDeseja fazer outra operação? (S/N)  ').upper()
            if loop == 'N':
                 break
@@ -65,7 +65,7 @@ while True:
            num1= int(input('Digite o primeiro valor: '))
            num2= int(input('Digite o segundo valor: '))
            total= mult(num1,num2)
-           print(total)
+           print(f'\nA multiplicação de {num1} + {num2}= {total}')
            loop= input('\nDeseja fazer outra operação? (S/N)  ').upper()
            if loop == 'N':
                 break
@@ -89,7 +89,7 @@ while True:
            num1= int(input('Digite o primeiro valor: '))
            num2= int(input('Digite o segundo valor: '))
            total= div(num1,num2)
-           print(total)
+           print(f'\nA divisão de {num1} + {num2}= {total}')
 
            loop= input('\nDeseja fazer outra operação? (S/N)  ').upper()
            if loop == 'N':
@@ -98,4 +98,5 @@ while True:
                 os.system('cls') 
 
         case 0:
+            print('Aplicação encerrada!')
             break
