@@ -71,19 +71,6 @@ while True:
                 break
            else:
                 os.system('cls') 
-        
-         
-         
-        case 5:
-           num1= int(input('Digite o numero a ser calculado: '))
-           num2 = int(input('Digite qual a potencia desejada: '))
-           total = calcpot(num1,num2)                     
-           print(f'O numero {num1} elevado a potencia de {num2} é {total} ')
-           loop= input('\nDeseja fazer outra operação? (S/N)  ').upper()
-           if loop == 'N':
-                break
-           else:
-                os.system('cls') 
          
         case 4:
            num1= int(input('Digite o primeiro valor: '))
@@ -91,6 +78,17 @@ while True:
            total= div(num1,num2)
            print(f'\nA divisão de {num1} + {num2}= {total}')
 
+           loop= input('\nDeseja fazer outra operação? (S/N)  ').upper()
+           if loop == 'N':
+                break
+           else:
+                os.system('cls') 
+
+        case 5:
+           num1= int(input('Digite o numero a ser calculado: '))
+           num2 = int(input('Digite qual a potencia desejada: '))
+           total = calcpot(num1,num2)                     
+           print(f'O numero {num1} elevado a potencia de {num2} é {total} ')
            loop= input('\nDeseja fazer outra operação? (S/N)  ').upper()
            if loop == 'N':
                 break
