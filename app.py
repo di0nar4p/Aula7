@@ -1,18 +1,14 @@
 import os
 import math as m
 
-
 def soma(num1: int, num2: int) -> int:
     return num1 + num2
-
 
 def subtracao(num1: int, num2: int) -> int:
     return num1 - num2
 
-
 def multiplicacao(num1: int, num2: int) -> int:
     return num1 * num2
-
 
 def divisao(num1: int, num2: int) -> int:
     try:
@@ -21,7 +17,6 @@ def divisao(num1: int, num2: int) -> int:
     except ZeroDivisionError:
         return 'Não é possível dividir um valor por zero!'
     return num1 / num2
-
 
 memoria = []  # memória
 
@@ -40,7 +35,6 @@ while True:
           7- COSENO
           8- TANGENTE
           9- MEMÓRIA
-
 
           0- SAIR
           ''')
@@ -196,5 +190,5 @@ while True:
                 os.system('cls')
 
         case 0:
-            print('Aplicação encerrada!')
+            print('Aplicação encerrada!!')
             break
