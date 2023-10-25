@@ -24,12 +24,7 @@ def divisao(num1: int, num2: int) -> int:
 
 
 memoria = []  # memória
-'''
-pensando ainda no que fazer com isso
-def memory (v:int)->int:
-    for i in range (v):
-        valor = memoria[i]
-        return valor '''
+
 
 while True:
     print('''
