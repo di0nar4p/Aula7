@@ -135,7 +135,7 @@ while True:
         case 6:
             num1 = float(input('Informe o valor do ângulo: '))
             total = m.sin(num1)
-            print(f'Seno de {num1}º é igual a {total} radianos.')
+            print(f'Seno de {num1}º é igual a {total:.10f} radianos.')
             mem= input('\nDeseja armazenar o valor? (S/N)  ').upper()
             if mem== 'N':
                 continue
@@ -182,7 +182,7 @@ while True:
                 os.system('cls') 
 
         case 9:
-            print(memoria)
+            print(*memoria)
             loop = input('\nDeseja fazer outra operação? (S/N)  ').upper()
             if loop == 'N':
                 break
